@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidenav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pos system fav</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">FOODIE<sub>Pos</sub></a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Checkout <i class='fas fa-cart-plus' style='font-size:18px;color:#464646'></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Notification <i class='fas fa-bell' style='font-size:18px;color:#464646'></i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Account</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" style="color: red;">Sign out</a>
+                </li>
+                <li class="nav-item">
+                  <form role="search" id="form">
+                    <input type="search" placeholder="Search...">
+                  </form>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <aside>
+      <ul class="filter">
+        <li class="nav-item">
+          <img class="img-style"src="pics/yogesh.jpg">
+      </li>
+      <li><h3>Foods & Drinks ></h3></li>
+        <li class="nav-item">
+            <a href="#" class="filter-link">Pizza</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="filter-link">Doughnut</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="filter-link activee">Burger</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="filter-link">Sandwich</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="filter-link"></a>
+        </li>
+    </ul>
+        <div class="aside-style">
+            
+        </div>
+    </aside>
+
+    <section>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+          
+            <div class="box-shadow-for-overlay">
+
+              <div class="item-row">
+                <div class="item-column-for-cart">
+                  <img class="img-for-item-row-for-card" src="pics/items/ap1">
+            <h2 class="item-content-for-card">Burger With lettuce</h2><br>
+            <h4 class="item-content-for-card1">type of money that is completely virtual</h4><br><br>
+            <div class="align-for-add-to-card">
+            <button class="add-to-card-button">-</button><b class="num">1</b><button class="add-to-card-button">+</button>
+            <br><br>
+            <button class="item-button-for-adt" style="cursor:pointer">Add to card</button><br><hr>
+            </div>  <strong class="rate">Total - $3</strong>
+                  </div>
+                  <span class="vl"></span>
+                  <div class="item-column-for-cart">
+                    <img class="img-for-item-row-for-bill" src="pics/items/ap1">
+                    <h2 class="item-content-for-bill">Burger With lettuce</h2><br>
+                    <h4 class="item-content-for-bill1">type of money that is completely virtual 
+                      <hr><button class="add-to-card-button">-</button><b class="num">1</b><button class="add-to-card-button">+</button>
+                      <strong class="rate-bill">Total = $3</strong></h4>
+                    <br>
+                    <br><br>
+                  <button class="check-out">Check out <i class="fa fa-shopping-cart" style="font-size:18px;color:rgb(255, 255, 255)"></i></button>
+
+                  </div>
+                  
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="item-row">
+            <div class="box-shadow item-column-for-aside">
+                <div class="modules">
+               <h1>Dashboard</h1>
+               <h1 class="active">Food & Drinks</h1>
+               <h1>Messages <i class="fa fa-envelope" style="font-size:18px;color:red"></i></h1>
+               <h1>Bills</h1>
+               <h1>Settings</h1>
+               <span>Other</span>
+               <h1>Notifications <i class="fa fa-gift" style="font-size:25px; color: red;"></i></h1>
+               <h1>Support</h1>
+               </div>
+              </div>
+              
+            <div class="box-shadow item-column">
+                <img class="img-for-item-row" src="pics/items/ap1">
+              <h2 class="item-content">Burger With lettuce</h2><br>
+              <h4 class="item-content">type of money that is completely virtual</h4>
+              <br>
+              <button class="item-button" style="cursor:pointer" onclick="openNav()">Add to card</button>
+            </div>
+            <div class="box-shadow item-column">
+                <img class="img-for-item-row" src="pics/items/ap2">
+              <h2 class="item-content">Big Humburger</h2><br>
+              <h4 class="item-content">type of money that is completely virtual</h4> 
+              <br>
+              <button class="item-button" style="cursor:pointer" onclick="openNav()">Add to card</button>
+            </div>
+            <div class="box-shadow item-column">
+                <img class="img-for-item-row" src="pics/items/ap3">
+              <h2 class="item-content">American Classic Burger</h2><br>
+              <h4 class="item-content">type of money that is completely virtual</h4> 
+              <br>
+              <button class="item-button" style="cursor:pointer" onclick="openNav()">Add to card</button>
+            </div>
+            <div class="box-shadow item-column margin-top">
+                <img class="img-for-item-row" src="pics/items/ap4">
+              <h2 class="item-content">Cheese Burger</h2><br>
+              <h4 class="item-content">type of money that is completely virtual</h4> 
+              <br>
+              <button class="item-button" style="cursor:pointer" onclick="openNav()">Add to card</button>
+            </div>
+            <div class="box-shadow item-column margin-top">
+                <img class="img-for-item-row" src="pics/items/ap5">
+              <h2 class="item-content">Cheese Burger</h2><br>
+              <h4 class="item-content">type of money that is completely virtual</h4> 
+              <br>
+              <button class="item-button" style="cursor:pointer" onclick="openNav()">Add to card</button>
+            </div>
+            <div class="box-shadow item-column margin-top">
+                <img class="img-for-item-row" src="pics/items/ap6">
+              <h2 class="item-content">Burger By Magone</h2><br>
+              <h4 class="item-content">type of money that is completely virtual</h4>
+              <br>
+              <button class="item-button" style="cursor:pointer" onclick="openNav()">Add to card</button> 
+            </div>
+          </div>
+    </section>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        const navLink = document.querySelectorAll(".nav-link");
+        
+        hamburger.addEventListener("click", mobileMenu);
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+        
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+        
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+
+        const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      const site = 'pagedart.com';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+
+              function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+          function openNav() {
+      document.getElementById("myNav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.display = "none";
+    }
+            </script>
+</body>
+</html>
